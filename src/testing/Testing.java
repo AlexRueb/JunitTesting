@@ -60,13 +60,5 @@ public class Testing {                                          //inspired from 
         }
         return finalAr;                                 //returns the value of total solutions
     }
-
-
-    public static void main ( String args[] ) {
-        int total = 63;
-        int coins[] = {1,5,10,21,25};
-        makeChange(coins, total);
-
-    }
  
 }
