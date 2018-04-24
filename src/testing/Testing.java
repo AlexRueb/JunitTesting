@@ -1,12 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author nicktonjum
+ * @authors: Nick Tonjum, Alex Rueb, Connor Lowe
+ * Date: 24 April 2018
+ * Overview: A program that was developed on the concepts of dynamic
+ * programming with the assistance of the JUnit Testing framework. The program 
+ * itself solves the minimum coin change proglem.  
  */
 package testing;
 
@@ -27,7 +24,7 @@ public class Testing {                                          //inspired from 
         }
         for(int j=0; j < coins.length; j++){                    //start loop to go through the coins array
             for(int i=1; i <= total; i++){                      //start loop to go through and make the best change
-                if(i >= coins[j]){                              //if i
+                if(i >= coins[j]){                              
                     if (temp[i - coins[j]] + 1 < temp[i]) {
                         temp[i] = 1 + temp[i - coins[j]];
                         bestChange[i] = j;                      //replace value in best change with j
@@ -37,7 +34,7 @@ public class Testing {                                          //inspired from 
         }
         
         if (bestChange[bestChange.length - 1] == -1) {      //start print
-            System.out.print("There is no solution\n");       //if there is no best change
+            System.out.print("There is no solution\n");     //if there is no best change
             return bestChange;                              //return 0 after printing no solution
         }
         System.out.print("The best change is: ");
