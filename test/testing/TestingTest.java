@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package testing;
 
 import org.junit.Test;
@@ -11,8 +5,10 @@ import static org.junit.Assert.*;
 //import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
- *
- * @author alex
+ * Authors: Nick Tonjum, Alex Rueb, Connor Lowe
+ * Date: 24 April 2018
+ * Overview: A class utilizing the JUnit Testing framework that was
+ * used to dynamically develop our main program 
  */
 public class TestingTest {
 
@@ -60,7 +56,6 @@ public class TestingTest {
         int[] given = {1,5,10,25};
         int[] result = Testing.makeChange(given, 42);
         assertArrayEquals(exp, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
 
